@@ -1,0 +1,38 @@
+@import 'config.scss';
+@import 'fonts.scss';
+@import 'reset.scss';
+
+:root {
+  // Breakpoints
+  --template-width: 1920;
+  --max-width-container: 1200;
+  --section-height: calc(100vh - 130px);
+  // Colors
+  --color-bg: #dbeeee;
+  --color-box: #bddddd;
+  --color-contacts: #e4d7b9;
+  --color-text: #3d9090;
+  @media (max-width: 1200px) {
+    --section-height: calc(100vh - 110px);
+  }
+}
+
+body {
+  font-family: 'Roboto';
+  font-size: #{'clamp(14px, 1.5vw, 24px)'};
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 1px;
+
+  color: #000;
+
+  height: 100%;
+
+  padding: 0 30px 30px 30px;
+
+  background-color: var(--color-bg);
+}
+
+p {
+  margin-bottom: 20px;
+}

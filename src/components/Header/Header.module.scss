@@ -1,0 +1,12 @@
+.headerWrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100px;
+  @media (max-width: 1200px) {
+    height: 80px;
+  }
+}
